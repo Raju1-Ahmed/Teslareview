@@ -1,6 +1,4 @@
-import { Button } from 'bootstrap';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Card.css'
 
 const Card = (props) => {
@@ -9,9 +7,9 @@ const Card = (props) => {
         <div className='image'>
             <div className=' mt-3  py-3 px-3 bacground'>
             <button className='border'><img src={img}/></button>
-            <h3>{name}</h3>
-            <p> <small>{seller}</small> </p>
-            <p>{ratings}</p>
+            <h3>Name: {name}</h3>
+            <p> <small>Review: {seller}</small> </p>
+            <p>Rating: {ratings}</p>
         </div>
         </div>
     );

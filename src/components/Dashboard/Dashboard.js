@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -54,9 +54,16 @@ const Dashboard = () => {
                     <Bar dataKey="rtr" fill="#82ca9d" />
                     </BarChart>
                 </Col>
-                {/* <Col className='lg-6'>
-                
-                </Col> */}
+            </Row>
+            <Row>
+
+  <LineChart width={600} height={300} data={data}>
+    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+    <CartesianGrid stroke="#ccc" />
+    <XAxis dataKey="review" />
+    <YAxis  dataKey="rr"/>
+  </LineChart>
+
             </Row>
         </Container>
     );
