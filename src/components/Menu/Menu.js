@@ -1,44 +1,21 @@
 import React from 'react';
-import { Button, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const Menu = () => {
+
     return (
         <div>
-    <Nav className="justify-content-center mt-3" activeKey="/home">
-    <Nav.Item>
-      <Nav.Link href="/home">Home</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-1">Link</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="link-2">Link</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link eventKey="disabled">
-        Disabled
-      </Nav.Link>
-    </Nav.Item>
-  </Nav>
+    <Nav>
+        <Link to="/header">Home</Link>
+        <Link to="/review">Review</Link>
+        <Link to="/product">Product</Link>
+        <Link to="/about">About</Link>
+    </Nav>
+
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    );
+        );
 };
 
 export default Menu;
