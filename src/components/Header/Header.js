@@ -17,7 +17,8 @@ const Header = () => {
 <p><small>“In the first quarter, we produced over 305,000 vehicles and delivered over 310,000 vehicles, despite ongoing supply chain challenges and factory shutdowns,” Tesla said in its release. “Tesla will post its financial r esults for the first quarter of 2022 after market close on</small></p>
             </div>
         </Col>
-        <Col className='float-start' lg={6} md={4}>this is header of right
+        <Col className='float-start' lg={6} md={4}>
+        <h3><small>This is Tesla latest version car</small></h3>
         <Card>
         <Card.Img src={images}   alt="Card image" />
         </Card>
