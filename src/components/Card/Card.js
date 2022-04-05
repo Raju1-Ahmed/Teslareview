@@ -1,13 +1,16 @@
+import { Button } from 'bootstrap';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Card.css'
 
 const Card = (props) => {
-    const {name,thumbnailUrl,phone, email,company,} = props.review;
+        const {name,img,ratings, email,company,} = props.review;
     return (
-        <div>
-            <h1>{name}</h1>
-            <h1>{phone}</h1>
-            <button><img src={thumbnailUrl} /></button>
-
+        <div className='image'>
+            <div className='d-flex mt-3  py-3 px-3 bacground'>
+            <button className='border'><img src={img}/></button>
+            <h3>{name}</h3>
+        </div>
         </div>
     );
 };

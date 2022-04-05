@@ -1,19 +1,17 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Menu.css'
 
 
 const Menu = () => {
 
     return (
-        <div>
-    <Nav>
+        <div className='menu-style mt-3'>
         <Link to="/header">Home</Link>
         <Link to="/review">Review</Link>
         <Link to="/product">Product</Link>
+        <Link to="/dashboard">Dashboard</Link>
         <Link to="/about">About</Link>
-    </Nav>
-
         </div>
         );
 };

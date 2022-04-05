@@ -15,7 +15,7 @@ const Review = (props) => {
                <Row>
         <Col>
 
-            <div>
+            <div className=''>
             {
             reviews.map(review => <Card
             key={review.id}

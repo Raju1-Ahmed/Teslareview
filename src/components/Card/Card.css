@@ -1,0 +1,29 @@
+.review-Button{
+background: blue;
+display: flex;
+}
+.review-Button img{
+    width:50px;
+}
+.review-Button h2{
+    font-family: system-ui;
+    font-size: 19px;
+    font-weight: 700;
+}
+.image h3{
+    padding: 12px;
+    font-weight: normal;
+    font-family: monospace;
+    font-size: 17px;
+}
+.image img{
+    width: 41px;
+    border-radius: 10px;
+}
+.bacground{
+    background-color: #0d6efd7d;;
+}
+.border{
+    border-radius: 23px;
+    border: 1px solid #146beb!important;
+}   

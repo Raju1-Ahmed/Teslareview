@@ -1,0 +1,14 @@
+
+.menu-style{
+    display: inline-block;
+}
+.menu-style a{
+    list-style-type: none;
+    padding-left: 10px;
+    align-items: center;
+ text-decoration: none;
+}
+
+.menu-style a :hover{
+ color:black;
+}

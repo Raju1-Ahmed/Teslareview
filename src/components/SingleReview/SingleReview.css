@@ -1,0 +1,18 @@
+
+.image h3{
+    padding: 12px;
+    font-weight: normal;
+    font-family: monospace;
+    font-size: 17px;
+}
+.image img{
+    width: 41px;
+    border-radius: 10px;
+}
+.bacground{
+    background-color: #0d6efd7d;;
+}
+.border{
+    border-radius: 23px;
+    border: 1px solid #146beb!important;
+}   
