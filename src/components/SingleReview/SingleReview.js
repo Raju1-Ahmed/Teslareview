@@ -1,16 +1,18 @@
+import { faRankingStar, faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import './SingleReview.css'
 const SingleReview = (props) => {
     const {name, img, seller, ratings} = props.review;
     return (
-        <div className='image mt-5'>
-            <div className='  rounded py-3 px-3 bacground'>
-            <button className='border'><img src={img}/></button>
-            <h3>Name: {name}</h3>
-            <p> <small>Review: {seller}</small> </p>
+            <div className='bacground rounded py-3'>
+            <button className='image-style'><img src={img}/></button>
+            <h3>{name}</h3>
+            <p> <small>{seller}</small> </p>
+            <Button> <FontAwesomeIcon icon={faRankingStar}></FontAwesomeIcon> </Button>
             <p>Rating: {ratings}</p>
             </div>
-        </div>
     );
 };
 

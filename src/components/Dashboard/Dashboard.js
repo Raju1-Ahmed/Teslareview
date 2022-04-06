@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart,Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
     const data = [
@@ -30,7 +30,7 @@ const Dashboard = () => {
           "rtr": 4800
         },
         {
-          "name": "Review F",
+          "review": "Review F",
           "r": 2390,
           "rtr": 3800
         },
@@ -48,6 +48,7 @@ const Dashboard = () => {
                     <BarChart width={730} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="review" />
+                    <Tooltip></Tooltip>
                     <YAxis />
                     <Legend />
                     <Bar dataKey="rr" fill="#8884d8" />
@@ -55,13 +56,17 @@ const Dashboard = () => {
                     </BarChart>
                 </Col>
             </Row>
-            <Row>
+            <Row className='mt-5 mb-5'>
 
-  <LineChart width={600} height={300} data={data}>
+  <LineChart width={500} height={300} data={data}>
     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
     <CartesianGrid stroke="#ccc" />
-    <XAxis dataKey="review" />
-    <YAxis  dataKey="rr"/>
+    <Line dataKey={'review'}></Line>
+    <Line dataKey={'rtr'}></Line>
+    <Line dataKey={'review'}></Line>
+    <Line dataKey={'rtr'}></Line>
+    <Tooltip></Tooltip>
+    <YAxis></YAxis> 
   </LineChart>
 
             </Row>

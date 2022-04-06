@@ -1,4 +1,13 @@
+.warning{
+    background-color: #0d6efd85;
+}
+.menu-icon{
+    color: #0d6efd;
+    border: none;
+    margin-top: 5px;
+    border-radius: 20px;
 
+}
 .menu-style{
     display: inline-block;
 }
@@ -7,8 +16,11 @@
     padding-left: 10px;
     align-items: center;
  text-decoration: none;
+ cursor: pointer;
+
 }
 
-.menu-style a :hover{
+.menu-style a:hover{
  color:black;
+ border-bottom: 2px solid black;
 }
