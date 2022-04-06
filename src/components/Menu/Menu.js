@@ -23,8 +23,8 @@ const Menu = () => {
                     <div className='menu-style '>   
                         <Link to="/header">Home</Link>
                         <Link to="/review">Review</Link>
-                        <Link to="/product">Product</Link>
                         <Link to="/dashboard">Dashboard</Link>
+                        <Link to="/product">Blog</Link>
                         <Link to="/about">About</Link>
                     </div>
                 </Col>

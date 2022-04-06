@@ -26,7 +26,7 @@ const Header = () => {
         </Col>
     </Row>
   <Row>
-  <h2 className='mt-3'>Customer Review...</h2>
+  <h2 className='mt-3'>Customer Review...({reviews.length})</h2>
         <Col>
             <div className='d-flex mt-3'>
                 {

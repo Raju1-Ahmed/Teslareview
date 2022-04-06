@@ -4,71 +4,75 @@ import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart,Tooltip, XAxis, Y
 
 const Dashboard = () => {
     const data = [
-        {
-          "review": "Review A",
-          "rr": 4000,
-          "rtr": 2400
-        },
-        {
-          "review": "Review B",
-          "rr": 3000,
-          "rtr": 1398
-        },
-        {
-          "review": "Review C",
-          "rr": 2000,
-          "rtr": 9800
-        },
-        {
-          "review": "Review D",
-          "rr": 2780,
-          "rtr": 3908
-        },
-        {
-          "review": "Review E",
-          "rr": 1890,
-          "rtr": 4800
-        },
-        {
-          "review": "Review F",
-          "r": 2390,
-          "rtr": 3800
-        },
-        {
-          "review": "Review G",
-          "rr": 3490,
-          "rtr": 4300
-        }
-      ]
+      {
+          "month": "Mar",
+          "investment": 100000,
+          "sell": 241,
+          "revenue": 10401
+      },
+      {
+          "month": "Apr",
+          "investment": 200000,
+          "sell": 423,
+          "revenue": 24500
+      },
+      {
+          "month": "May",
+          "investment": 500000,
+          "sell": 726,
+          "revenue": 67010
+      },
+      {
+          "month": "Jun",
+          "investment": 500000,
+          "sell": 529,
+          "revenue": 40405
+      },
+      {
+          "month": "Jul",
+          "investment": 600000,
+          "sell": 601,
+          "revenue": 50900
+      },
+      {
+          "month": "Aug",
+          "investment": 700000,
+          "sell": 670,
+          "revenue": 61000
+      }
+  ]
+
       
     return (
         <Container>
             <Row>
                 <Col className='lg-6 mt-5'>
+                  <h2>investment...</h2>
                     <BarChart width={730} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="review" />
+                    <XAxis dataKey="month" />
                     <Tooltip></Tooltip>
                     <YAxis />
                     <Legend />
-                    <Bar dataKey="rr" fill="#8884d8" />
-                    <Bar dataKey="rtr" fill="#82ca9d" />
+                    <Bar dataKey="investment" fill="#8884d8" />
+                    <Bar dataKey="sell" fill="#82ca9d" />
                     </BarChart>
                 </Col>
             </Row>
             <Row className='mt-5 mb-5'>
-
-  <LineChart width={500} height={300} data={data}>
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-    <CartesianGrid stroke="#ccc" />
-    <Line dataKey={'review'}></Line>
-    <Line dataKey={'rtr'}></Line>
-    <Line dataKey={'review'}></Line>
-    <Line dataKey={'rtr'}></Line>
-    <Tooltip></Tooltip>
-    <YAxis></YAxis> 
-  </LineChart>
-
+              <Col>
+                <h2>Seller Cheart</h2>
+                <LineChart width={500} height={300} data={data}>
+                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                <CartesianGrid stroke="#ccc" />
+                <Line dataKey={'month'}></Line>
+                <Line dataKey={'investment'}></Line>
+                <Line dataKey={'revenue'}></Line>
+                <Line dataKey={'sell'}></Line>
+                <Tooltip></Tooltip>
+                <YAxis></YAxis> 
+                </LineChart>
+              </Col>
             </Row>
         </Container>
     );
