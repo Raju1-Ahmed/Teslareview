@@ -8,8 +8,6 @@
 * Letest car Review
 
 * is not Tesla Offcial Review side
-* is not Tesla Offcial Review side
-* is not Tesla Offcial Review side
 
 * Five Components 
 
